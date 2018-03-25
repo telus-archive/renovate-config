@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "@telusdigital/renovate-config",
   "description": "TELUS preset configs for Renovate",
   "author": "Ahmad Nassri <ahmad.nassri@telus.com> (https://labs.telus.com/)",
@@ -25,7 +25,10 @@
   },
   "renovate-config": {
     "default": {
-      "extends": ["config:base", "schedule:nonOfficeHours"]
+      "extends": [
+        "config:base",
+        "schedule:nonOfficeHours"
+      ]
     },
     "encrypted": {
       "npmToken": "PhEKXUwZLAbJYcOECUmwS0mMT49WG23AvDt36x9hLrM/wEX7qGCnNHz2e38eNomBMJpubNol2FzcioaS2npiQ7EJMGpNVdAOP98N5aGhl2lVJfSzjpMXrS+rvy/rwWYJGTxyV5BaVf/lpAXTeCDvUqfSXmgFIbkUVGyfSxxD8iiPMVFxpVGVnldW4mYcXbX7K98o3v17zvZKkw7ciIVdN284AHZyBljaI8r4eE15F507RrP4I2trcCTWEmNm3HKy8yGKHVa0ve0YQxA5s5UY0HG2lHTVzUNw3D1hioWoMVdYupGuhQvp/UVk2x3dkPAD3Dp64Q+dr/Ms24p1gDmgkw=="

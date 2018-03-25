@@ -28,22 +28,22 @@
       "extends": [
         "config:js-app",
         "schedule:daily"
-      ]
+      ],
+      "lockFileMaintenance": {
+        "enabled": true,
+        "extends": "schedule:weekly"
+      },
+      "labels": [
+  	    "dependencies"
+  	  ],
+      "prHourlyLimit": 0,
+      "prConcurrentLimit": 0,
+      "semanticCommits": true,
+      "rebaseStalePrs": true,
+      "ignoreNpmrcFile": true,
+      "encrypted": {
+        "npmToken": "PhEKXUwZLAbJYcOECUmwS0mMT49WG23AvDt36x9hLrM/wEX7qGCnNHz2e38eNomBMJpubNol2FzcioaS2npiQ7EJMGpNVdAOP98N5aGhl2lVJfSzjpMXrS+rvy/rwWYJGTxyV5BaVf/lpAXTeCDvUqfSXmgFIbkUVGyfSxxD8iiPMVFxpVGVnldW4mYcXbX7K98o3v17zvZKkw7ciIVdN284AHZyBljaI8r4eE15F507RrP4I2trcCTWEmNm3HKy8yGKHVa0ve0YQxA5s5UY0HG2lHTVzUNw3D1hioWoMVdYupGuhQvp/UVk2x3dkPAD3Dp64Q+dr/Ms24p1gDmgkw=="
+      }
     },
-    "lockFileMaintenance": {
-      "enabled": true,
-      "extends": "schedule:weekly"
-    },
-    "labels": [
-      "dependencies"
-    ],
-    "prHourlyLimit": 0,
-    "prConcurrentLimit": 0,
-    "semanticCommits": true,
-    "rebaseStalePrs": true,
-    "ignoreNpmrcFile": true,
-    "encrypted": {
-      "npmToken": "PhEKXUwZLAbJYcOECUmwS0mMT49WG23AvDt36x9hLrM/wEX7qGCnNHz2e38eNomBMJpubNol2FzcioaS2npiQ7EJMGpNVdAOP98N5aGhl2lVJfSzjpMXrS+rvy/rwWYJGTxyV5BaVf/lpAXTeCDvUqfSXmgFIbkUVGyfSxxD8iiPMVFxpVGVnldW4mYcXbX7K98o3v17zvZKkw7ciIVdN284AHZyBljaI8r4eE15F507RrP4I2trcCTWEmNm3HKy8yGKHVa0ve0YQxA5s5UY0HG2lHTVzUNw3D1hioWoMVdYupGuhQvp/UVk2x3dkPAD3Dp64Q+dr/Ms24p1gDmgkw=="
-    }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "name": "@telusdigital/renovate-config",
+  "description": "TELUS preset configs for Renovate",
+  "author": "Ahmad Nassri <ahmad.nassri@telus.com> (https://labs.telus.com/)",
+  "homepage": "https://github.com/telusdigital/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telusdigital/renovate-config.git"
+  },
+  "license": "ISC",
+  "keywords": [
+    "telus",
+    "renovate",
+    "config"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/telusdigital/renovate-config/issues"
+  },
+  "scripts": {
+    "test": "echo \"WARNING: testing not applicable\" && exit 0"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": ["config:base", "schedule:nonOfficeHours"]
+    }
+  }
+}

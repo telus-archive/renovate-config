@@ -27,8 +27,10 @@
     "default": {
       "extends": [
         "config:js-app",
-        "schedule:daily"
+        "schedule:weekly"
       ],
+      "pinVersions": false,
+      "separatePatchReleases": true,
       "lockFileMaintenance": {
         "enabled": true,
         "extends": "schedule:weekly"

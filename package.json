@@ -32,7 +32,7 @@
         "default:separatePatchReleases",
         "default:maintainLockFilesWeekly",
         "default:semanticCommits",
-        "default:rebaseStalePrs",
+        "default:rebaseStalePrs"
       ],
       "labels": [
         "dependencies"

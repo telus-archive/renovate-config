@@ -29,7 +29,6 @@
         "config:base",
         "schedule:weekly",
         "default:pinDigestsDisabled",
-        "default:maintainLockFilesWeekly",
         "default:semanticCommits",
         "default:rebaseStalePrs",
         "default:preserveSemverRanges"

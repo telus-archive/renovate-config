@@ -1,5 +1,8 @@
-# TELUS digital [Renovate][] presets
+# TELUS digital Renovate presets
 
-This repo contains default presets for [Renovate][].
+> This repo contains default presets for [Renovate][].
 
-[Renovate]: https://renovateapp.com
+Review [Full configuration docs](https://renovatebot.com/docs/configuration-options/)
+
+[Renovate]: https://renovatebot.com/
+

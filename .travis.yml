@@ -1,0 +1,27 @@
+if: tag IS blank
+
+language: node_js
+
+node_js:
+  - 9
+
+cache:
+  directories:
+    - node_modules
+
+stages:
+  - test
+  - release
+
+before_install: export PATH=$PATH:$TRAVIS_BUILD_DIR/.scripts
+
+jobs:
+  include:
+    - stage: test
+      script: true
+
+    - stage: release
+      node: 9
+      script: npx semantic-release
+      if: branch = master
+      if: type IN (push)

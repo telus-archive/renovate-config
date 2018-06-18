@@ -30,11 +30,13 @@
         "schedule:weekly",
         "default:pinDigestsDisabled",
         "default:separatePatchReleases",
-        "default:maintainLockFilesWeekly",
         "default:semanticCommits",
         "default:rebaseStalePrs",
         "default:preserveSemverRanges"
       ],
+      "lockFileMaintenance": {
+        "enabled": false
+      },
       "labels": [
         "dependencies"
       ],

@@ -1,27 +1,32 @@
 {
-  "version": "1.1.6",
-  "name": "@telusdigital/renovate-config",
+  "version": "0.0.0-development",
+  "name": "@telus/renovate-config",
   "description": "TELUS preset configs for Renovate",
-  "author": "Ahmad Nassri <ahmad.nassri@telus.com> (https://labs.telus.com/)",
-  "homepage": "https://github.com/telusdigital/renovate-config",
+  "homepage": "https://github.com/telus/renovate-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telusdigital/renovate-config.git"
+    "url": "https://github.com/telus/renovate-config.git"
   },
-  "license": "ISC",
-  "keywords": [
-    "telus",
-    "renovate",
-    "config"
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": ["telus","renovate","config"],
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "lib",
+    "index.js"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "bugs": {
-    "url": "https://github.com/telusdigital/renovate-config/issues"
+    "url": "https://github.com/telus/renovate-config/issues"
   },
   "scripts": {
-    "test": "echo \"WARNING: testing not applicable\" && exit 0"
+    "lint:audit": "npm audit",
+    "lint:deps": "npx updated",
+    "lint:ec": "npx editorconfig-checker .",
+    "lint:js": "npx eslint .",
+    "lint:node": "npx -p node-release-lines isnodesafe --ci",
+    "lint": "npx npm-run-all -p lint:*"
   },
   "renovate-config": {
     "default": {

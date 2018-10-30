@@ -21,11 +21,8 @@
     "url": "https://github.com/telus/renovate-config/issues"
   },
   "scripts": {
-    "lint:audit": "npm audit",
-    "lint:deps": "npx updated",
     "lint:ec": "npx editorconfig-checker .",
-    "lint:js": "npx eslint .",
-    "lint:node": "npx -p node-release-lines isnodesafe --ci",
+    "lint:md": "npx remark --quiet --frail .",
     "lint": "npx npm-run-all -p lint:*"
   },
   "renovate-config": {

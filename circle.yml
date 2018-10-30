@@ -33,7 +33,6 @@ jobs:
     executor: app
     steps:
       - attach
-      - npmrc
       - run: npx semantic-release
 
 workflows:

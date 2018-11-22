@@ -33,7 +33,6 @@
         "default:pinDigestsDisabled",
         "default:separatePatchReleases",
         "default:semanticCommits",
-        "default:rebaseStalePrs",
         "default:preserveSemverRanges",
         "default:prConcurrentLimitNone",
         "default:prHourlyLimitNone",

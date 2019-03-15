@@ -30,6 +30,7 @@
       "extends": [
         "config:base",
         "schedule:weekly",
+        "default:vulnerabilityAlerts",
         "default:pinDigestsDisabled",
         "default:separatePatchReleases",
         "default:semanticCommits",

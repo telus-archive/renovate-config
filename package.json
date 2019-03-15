@@ -30,7 +30,6 @@
       "extends": [
         "config:base",
         "schedule:weekly",
-        "default:vulnerabilityAlerts",
         "default:pinDigestsDisabled",
         "default:separatePatchReleases",
         "default:semanticCommits",
@@ -42,6 +41,9 @@
       ],
       "lockFileMaintenance": {
         "enabled": false
+      },
+      "vulnerabilityAlerts": {
+        "labels": ["security"]
       },
       "ignoreNpmrcFile": true,
       "encrypted": {
